@@ -6,8 +6,15 @@ import Link from '@docusaurus/Link';
 type FeatureItem = {
   link: string;
   prefix: string;
+  link: string;
+  prefix: string;
   title: string;
   description: JSX.Element;
+  focuseAreas: string;
+};
+
+type FocuseAreasData = {
+  data: string;
   focuseAreas: string;
 };
 
@@ -31,17 +38,38 @@ const FeatureList: FeatureItem[] = [
   },
   {
     prefix: 'Foundation',
+    prefix: 'Kickoff',
+    title: 'Frequently Asked Questions',
+    link: '/faq',
+    description: (
+      <>
+        The most common questions about Dynamic DevOps Roadmap. What is the problem this roadmap is trying to solve?
+        Who is the target audience, and what is the expected timeline for finishing it?
+        And many other important areas before starting this roadmap.
+      </>
+    ),
+    focuseAreas: '',
+  },
+  {
+    prefix: 'Foundation',
     title: 'Introduction',
+    link: '/foundations/introduction',
     link: '/foundations/introduction',
     description: (
       <>
         An overview of our Dynamic DevOps Roadmap and how this MVP-style roadmap differs from other
         linear roadmaps.
+        An overview of our Dynamic DevOps Roadmap and how this MVP-style roadmap differs from other
+        linear roadmaps.
       </>
     ),
     focuseAreas: 'Learning Strategy • Focus Areas • DevOps Topology • Soft Skills',
+    focuseAreas: 'Learning Strategy • Focus Areas • DevOps Topology • Soft Skills',
   },
   {
+    prefix: 'Foundation',
+    title: 'Module 1: Welcome to the DevOps World',
+    link: '/foundations/module-01',
     prefix: 'Foundation',
     title: 'Module 1: Welcome to the DevOps World',
     link: '/foundations/module-01',
@@ -50,11 +78,18 @@ const FeatureList: FeatureItem[] = [
         An introduction to the DevOps paradigm and the focus areas. Also, the relationship between
         DevOps, DevSecOps, and Agile in light of the Software Development Life Cycle (SDLC), in the end,
         is the initial phase of the HiveBox project phase 1.
+        An introduction to the DevOps paradigm and the focus areas. Also, the relationship between
+        DevOps, DevSecOps, and Agile in light of the Software Development Life Cycle (SDLC), in the end,
+        is the initial phase of the HiveBox project phase 1.
       </>
     ),
     focuseAreas: 'Overview • Software Production • DevOps Methodology',
+    focuseAreas: 'Overview • Software Production • DevOps Methodology',
   },
   {
+    prefix: 'Foundation',
+    title: 'Module 2: Basics - DevOps Core',
+    link: '/foundations/module-02',
     prefix: 'Foundation',
     title: 'Module 2: Basics - DevOps Core',
     link: '/foundations/module-02',
@@ -63,11 +98,18 @@ const FeatureList: FeatureItem[] = [
         Learn Python fundamentals, common development tools, and Git basics. Then, gain Linux
         essentials, common tools, and bash scripting skills. Also, cover Docker fundamentals — finally,
         a hands-on with the HiveBox project phase 2.
+        Learn Python fundamentals, common development tools, and Git basics. Then, gain Linux
+        essentials, common tools, and bash scripting skills. Also, cover Docker fundamentals — finally,
+        a hands-on with the HiveBox project phase 2.
       </>
     ),
     focuseAreas: 'Code • Operating System • Containers',
+    focuseAreas: 'Code • Operating System • Containers',
   },
   {
+    prefix: 'Foundation',
+    title: 'Module 3: Start - Laying the Foundation',
+    link: '/foundations/module-03',
     prefix: 'Foundation',
     title: 'Module 3: Start - Laying the Foundation',
     link: '/foundations/module-03',
@@ -76,11 +118,18 @@ const FeatureList: FeatureItem[] = [
         Define goals, prioritize requirements, dive into code modularity, and then move to testing and
         quality assurance. Implement unit tests, follow Docker best practices, and explore quality gates
         in continuous integration with GitHub Actions — finally, a hands-on with the HiveBox project phase 3.
+        Define goals, prioritize requirements, dive into code modularity, and then move to testing and
+        quality assurance. Implement unit tests, follow Docker best practices, and explore quality gates
+        in continuous integration with GitHub Actions — finally, a hands-on with the HiveBox project phase 3.
       </>
     ),
     focuseAreas: 'Planning • Code • Containers • Continuous Integration',
+    focuseAreas: 'Planning • Code • Containers • Continuous Integration',
   },
   {
+    prefix: 'Foundation',
+    title: 'Module 4: Expand - Constructing a Shell',
+    link: '/foundations/module-04',
     prefix: 'Foundation',
     title: 'Module 4: Expand - Constructing a Shell',
     link: '/foundations/module-04',
@@ -90,11 +139,19 @@ const FeatureList: FeatureItem[] = [
         practices. Embrace Kubernetes for container orchestration. Then explore observability, dive into
         continuous delivery solutions, also an overview of Cloud Computing — and finally, a hands-on
         with the HiveBox project phase 4.
+        Review goals in planning, then apply the Twelve-Factor App methodology and REST API best
+        practices. Embrace Kubernetes for container orchestration. Then explore observability, dive into
+        continuous delivery solutions, also an overview of Cloud Computing — and finally, a hands-on
+        with the HiveBox project phase 4.
       </>
     ),
     focuseAreas: 'Planning • Code • Containers • Observability • Continuous Integration • Continuous Delivery • Infrastructure',
+    focuseAreas: 'Planning • Code • Containers • Observability • Continuous Integration • Continuous Delivery • Infrastructure',
   },
   {
+    prefix: 'Foundation',
+    title: 'Module 5: Transform - Finishing the Structure',
+    link: '/foundations/module-05',
     prefix: 'Foundation',
     title: 'Module 5: Transform - Finishing the Structure',
     link: '/foundations/module-05',
@@ -104,11 +161,19 @@ const FeatureList: FeatureItem[] = [
         Infrastructure as Code, learn Terraform essentials, and Kubernetes configuration management like
         Helm and Kustomize. Then, implement CD best practices — and finally, a hands-on with the HiveBox
         project phase 5.
+        Refine goals, integrate code with external systems, and write integration tests. Also, utilize
+        Infrastructure as Code, learn Terraform essentials, and Kubernetes configuration management like
+        Helm and Kustomize. Then, implement CD best practices — and finally, a hands-on with the HiveBox
+        project phase 5.
       </>
     ),
     focuseAreas: 'Planning • Code • Infrastructure • Containers • Observability • Continuous Delivery',
+    focuseAreas: 'Planning • Code • Infrastructure • Containers • Observability • Continuous Delivery',
   },
   {
+    prefix: 'Foundation',
+    title: 'Module 6: Keep Improving',
+    link: '/foundations/module-06',
     prefix: 'Foundation',
     title: 'Module 6: Keep Improving',
     link: '/foundations/module-06',
@@ -119,11 +184,20 @@ const FeatureList: FeatureItem[] = [
         aggregation system for observability. Also, set up end-to-end release automation, explored
         continuous deployment with GitOps and Argo CD — and finally, a hands-on with the HiveBox
         project phase 6.
+        Conduct Agile retrospectives to analyze the improvement areas, optimize code performance, and
+        secure the software supply chain. Then, implement a multi-environment architecture with a log
+        aggregation system for observability. Also, set up end-to-end release automation, explored
+        continuous deployment with GitOps and Argo CD — and finally, a hands-on with the HiveBox
+        project phase 6.
       </>
     ),
     focuseAreas: 'Planning • Code • Infrastructure • Containers • Continuous Integration • Continuous Delivery • Continuous Deployment',
+    focuseAreas: 'Planning • Code • Infrastructure • Containers • Continuous Integration • Continuous Delivery • Continuous Deployment',
   },
   {
+    prefix: 'Foundation',
+    title: 'Module 7: Capstone Project',
+    link: '/foundations/module-07',
     prefix: 'Foundation',
     title: 'Module 7: Capstone Project',
     link: '/foundations/module-07',
@@ -132,13 +206,57 @@ const FeatureList: FeatureItem[] = [
         Self-driven project to put everything together and create an industry-grade project which
         includes defining the requirements, setting the plan, implementation, then reviewing and
         refinement.
+        Self-driven project to put everything together and create an industry-grade project which
+        includes defining the requirements, setting the plan, implementation, then reviewing and
+        refinement.
       </>
     ),
+    focuseAreas: 'Requirements • Planning • Implementation • Review',
     focuseAreas: 'Requirements • Planning • Implementation • Review',
   },
   {
     prefix: 'Foundation',
+    prefix: 'Foundation',
     title: 'Next Steps',
+    link: '/foundations/next-steps',
+    description: (
+      <>
+        Now, it's time to face the real world and prepare for the next step. Together, we will craft
+        your CV and cover letter. Then, create a skills radar chart to know your strengths and areas and
+        what you need to develop more. Also, discuss DevOps certificates and explore the following steps
+        as a DevOps engineer.
+      </>
+    ),
+    focuseAreas: '',
+  },
+  {
+    prefix: 'Practicing',
+    title: 'More Hands-on Projects',
+    link: '/projects',
+    description: (
+      <>
+        The HiveBox was a great hands-on project! What about more? Find out more end-to-end and use-case hands-on projects.
+        Docker Best Practices, Release Automation, Deployment Automation, Multi-Environment Setup, and more.
+      </>
+    ),
+    focuseAreas: '',
+  },
+  {
+    prefix: 'Job Finding',
+    title: 'Interview Preparation',
+    link: '/interview',
+    description: (
+      <>
+        How to prepare for the DevOps interview? It doesn't matter what your role is (DevOps Engineer or Software Engineer),
+        what your level is (Junior, Medior, or Senior), here are interview questions and best practices.
+      </>
+    ),
+    focuseAreas: '',
+  },
+  {
+    prefix: 'Advanced',
+    title: 'Career Growth',
+    link: '/growth',
     link: '/foundations/next-steps',
     description: (
       <>
@@ -182,12 +300,36 @@ const FeatureList: FeatureItem[] = [
       <>
         Congratulations! You're now a DevOps Engineer; what are other advanced or promising career paths?
         There are many opportunities in different areas, such as DevOps, DevSecOps, Cloud, SRE, Platform, DataOps, MLOps, AIOps, and more.
+        Congratulations! You're now a DevOps Engineer; what are other advanced or promising career paths?
+        There are many opportunities in different areas, such as DevOps, DevSecOps, Cloud, SRE, Platform, DataOps, MLOps, AIOps, and more.
       </>
     ),
+    focuseAreas: '',
     focuseAreas: '',
   },
 ];
 
+function FocuseAreas({ data }: FocuseAreasData) {
+  if (data) {
+    return (
+      <><span className="timeline-focus-areas">Focuse areas:</span> {data}</>
+    );
+  }
+  return '';
+}
+
+function Feature({ prefix, title, link, description, focuseAreas }: FeatureItem) {
+  return (
+    <li className="event" data-prefix={prefix}>
+      <h3><Link to={link}>{title}</Link></h3>
+      <p>{description}</p>
+      <FocuseAreas data={focuseAreas} />
+    </li>
+  );
+}
+
+
+export function HomepageFeaturesModulesOnly(): JSX.Element {
 function FocuseAreas({ data }: FocuseAreasData) {
   if (data) {
     return (
@@ -219,7 +361,17 @@ export function HomepageFeaturesModulesOnly(): JSX.Element {
             ))}
           </ul>
         </div>
+    <section id="career-roadmap" className="section timeline-outer">
+      <div className="container" id="timeline-content">
+        <div className="row">
+          <ul className="timeline">
+            {FeatureList.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </ul>
+        </div>
       </div>
+    </section>
     </section>
   );
 }
@@ -227,9 +379,10 @@ export function HomepageFeaturesModulesOnly(): JSX.Element {
 export default function HomepageFeaturesModules(): JSX.Element {
   return (
     <>
-      <Heading as="h2" className={styles.featuresHeader} id="walkthrough">
+      <Heading as="h2" className={styles.featuresHeader}>
         Dynamic DevOps Roadmap Walkthrough
       </Heading>
+      <HomepageFeaturesModulesOnly />
       <HomepageFeaturesModulesOnly />
       <div className="featuresButton">
         <Link title="Roadmap Modules"
