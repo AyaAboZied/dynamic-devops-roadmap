@@ -14,7 +14,7 @@ import QuizData from './module-06-quiz.json';
 [🗂 Back to the Roadmap Index](../../getting-started#roadmap-index)
 
 <p align="center">
-  <img alt="Module Overview" border="0" width="90%" src={require('./module-06-overview.png').default} />
+  <img class="module-overview-image" alt="Module Overview" border="0" width="90%" src={require('./module-06-overview.png').default} />
 </p>
 
 ## 6.1 Planning - Agile Retrospective
@@ -217,14 +217,14 @@ Don't mix between "Argo CD" and other [Argo projects](https://argoproj.github.io
 - [GitOps Continuous Deployment for cloud native applications - GitOps.tech](https://www.gitops.tech/)
 - [Argo CD Best Practices - Argo CD Docs](https://argo-cd.readthedocs.io/en/stable/user-guide/best_practices/)
 
-## Quiz - Module 6
+## Quiz
 
 <Quiz data={QuizData}/>
 
-## Project - HiveBox Phase 6
+## Hands-on
 
 Follow the instructions in the [HiveBox project phase 6](../../projects/hivebox#phase-6).
 
-## Interview Questions - Module 6
+## Interview Questions
 
 Review the interview questions related to [Module 6](../../interview/common-questions#module-6).

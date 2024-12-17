@@ -11,7 +11,7 @@ import QuizData from './module-03-quiz.json';
 [🗂 Back to the Roadmap Index](../../getting-started#roadmap-index)
 
 <p align="center">
-  <img alt="Module Overview" border="0" width="90%" src={require('./module-03-overview.png').default} />
+  <img class="module-overview-image" alt="Module Overview" border="0" width="90%" src={require('./module-03-overview.png').default} />
 </p>
 
 ## 3.1 Planning - Define Goals and Requirements
@@ -163,14 +163,14 @@ import QuizData from './module-03-quiz.json';
 
 - [The Importance of Pipeline Quality Gates and How to Implement Them - InfoQ](https://www.infoq.com/articles/pipeline-quality-gates/)
 
-## Quiz - Module 3
+## Quiz
 
 <Quiz data={QuizData}/>
 
-## Project - HiveBox Phase 3
+## Hands-on
 
 Follow the instructions in the [HiveBox project phase 3](../../projects/hivebox#phase-3).
 
-## Interview Questions - Module 3
+## Interview Questions
 
 Review the interview questions related to [Module 3](../../interview/common-questions#module-3).
